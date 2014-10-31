@@ -13,3 +13,7 @@ doc/.build
 index.html
 matconvnet-*.tar.gz
 local
+
+*.swp
+/matlab/mex_gpu
+/matlab/mex_cpu
