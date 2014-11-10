@@ -17,3 +17,5 @@ local
 *.swp
 /matlab/mex_gpu
 /matlab/mex_cpu
+/qrun
+/models

@@ -6,12 +6,15 @@ run(fullfile(fileparts(mfilename('fullpath')), '../matlab/vl_setupnn.m')) ;
 opts.dataDir = 'data/mnist' ;
 opts.expDir = 'data/mnist-baseline' ;
 opts.imdbPath = fullfile(opts.expDir, 'imdb.mat');
+
 opts.train.batchSize = 100 ;
-opts.train.numEpochs = 100 ;
+opts.train.numEpochs = 10 ;
 opts.train.continue = true ;
-opts.train.useGpu = false ;
+%opts.train.useGpu = false ;
+opts.train.useGpu = true ;
 opts.train.learningRate = 0.001 ;
 opts.train.expDir = opts.expDir ;
+
 opts = vl_argparse(opts, varargin) ;
 
 % --------------------------------------------------------------------
